@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress"/>
+    <ProgressBar
+        android:id="@+id/progress_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_89"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="60"/>
+    <!--android:background="@drawable/icon_triangle_reverse#ff0000"-->
+    <View
+        android:id="@+id/move"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:background="@drawable/icon_triangle_reverse"
+        android:layout_marginTop="@dimen/dp_15"/>
+    <ProgressBar
+        android:id="@+id/progress_02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_89"
+        style = "@style/ProgressBar_Mini"
+        android:max="100"
+        android:progress="70"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="move"
+        android:onClick="move"/>
+
+</LinearLayout>
